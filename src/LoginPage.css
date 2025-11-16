@@ -1,0 +1,114 @@
+.main{
+    top: 40px;
+    position: relative;
+    width: 450px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    left: 37%;
+    
+}
+.main.active{
+    height: 750px;
+}
+.main .login{
+    margin-top: 10%;
+    width: 450px;
+    height: 410px;
+    transition: translate .18s ease;
+    translate: 0;
+}
+.main.active .login{
+    transition: none;
+    translate: -500px;
+    
+}
+
+.main .signUp{
+    top: 70px;
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    translate: 500px;
+    transition :none;
+}
+.main.active .signUp{
+    transition: translate .18s ease;
+    translate: 0;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+.main  .input{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin: 30px 0;
+    margin-bottom: 7px;
+}
+
+.input input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 22px;
+    margin-bottom: 19px;
+    font-size: 17px;
+    font-style: normal;
+}
+.input input::placeholder{
+    
+    text-align: left;
+}
+
+.main  button{
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    
+}
+.main .login .register{
+    margin-top: 10px;
+    text-align: center;
+}
+.register a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.or{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 8px;
+   
+}
+.main .checkbox{
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.main .loginPage{
+    text-align: center;
+}
+.loginPage a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+body{
+    background-color: #D3D3D3;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+}
