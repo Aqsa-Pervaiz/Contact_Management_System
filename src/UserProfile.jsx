@@ -55,10 +55,11 @@ const UserProfile = ({ onLogout }) => {
     <div className="user-profile">
       <h2>User Profile</h2>
       <div className="user-details">
-        <p><strong>Name:</strong> {user.name}</p>
-        <p><strong>Email:</strong> {user.email || "-"}</p>
-        <p><strong>Phone:</strong> {user.phone || "-"}</p>
+        <p><strong>Name:</strong> {user?.name || "Loading..."}</p>
+        <p><strong>Email:</strong> {user?.email || "-"}</p>
+        <p><strong>Phone:</strong> {user?.phone || "-"}</p>
       </div>
+
       <div className="user-actions">
         <button onClick={() => setShowChangePasswordModal(true)}> Change Password
         </button>
@@ -96,3 +97,4 @@ const UserProfile = ({ onLogout }) => {
 };
 
 export default UserProfile;
+
